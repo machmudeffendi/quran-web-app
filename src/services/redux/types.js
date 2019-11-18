@@ -1,0 +1,2 @@
+export const FETCH_NEW_SURAH = 'FETCH_NEW_SURAH';
+export const FETCH_NEW_AYYAH = 'FETCH_NEW_AYYAH';
