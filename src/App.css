@@ -1,305 +1,277 @@
-.shadow{
-  /* box-shadow: 0px 1px 10px rgba(90, 89, 89, 0.5); */
-  border-bottom: 10px solid #55efc4;
-}
+/* 
+  color theme: 
+    -light
+      #55efc4
+      #00b894
+      #676767
+      #ccc
+    -dark
+      #1c2022
+      #24282a
+      #fff
+      #dadada
+*/
 
-.dark .shadow{
-  /* box-shadow: 0px 0px 0px rgba(90, 89, 89, 0.5); */
-  border-bottom: 10px solid #24282a;
-}
-.dark .nav-header{
-  background-color: #1c2022;
-}
-.dark .darkmode-btn{
-  color: #fff;
-}
-.dark .search-body{
-  background-color: #24282a;
-}
-.dark .content{
-  background-color: #1c2022;
-}
-.dark .book{
-  background-color: #24282a;
-  color: #fff;
-}
-.dark{
-  background-color: #1c2022;
-}
 
-.dark .book .title-link{
-  color: #dadada;
-}
-.dark .book .text-grey{
-  color: #fff;
-}
-
-.dark .title-surah{
-  color: #dadada;
-}
-.dark .item{
-  color: #fff;
-}
-.dark .arabic{
-  color: #dadada;
-}
-.dark .translate{
-  color: #dadada;
-}
-.dark .bx-items .item{
-  background-color: #24282a;
-}
-.dark .bottom-player{
-  background-color: #1c2022;
-  border-radius: 8px;
-}
-.dark .basic-background{
-  position: fixed;
-  min-width: 100%;
+html {
+  position: relative;
   min-height: 100%;
-  background-color: #1c2022;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+.bg-c-green{
+  background-color: #00b894;
+}
+
+.card-link{
+  color: #00b894;
+  font-weight: 700;
+}
+.card-link:hover{
+  color: #016955;
+}
+
+.desc-h-scroll{
+  height: 100px;
+  bottom: 0;
+  overflow-y: auto;
+}
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 65px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+}
+
+.link-footer{
+  color: #00b894;
+  font-weight: 500;
+}
+.link-footer:hover{
+  color: #016955;
+}
+
+._404title{
+  font-size: 100px;
+  font-weight: 700;
+  color: #55efc4;
+}
+._404title::before{
+  content: '';
+  position: absolute;
+  display: inline;
+  width: 300px;
+  height: 300px;
+  background-color: #fff;
+  margin: -5px 0 10px -20px;
+  box-shadow: 0 0 30px 8px #ccc;
+  border-radius: 10px;
   z-index: -1;
 }
-
-
-.nav-header{
-  background-color: #00b894;
-  padding-top: .5rem;
-  padding-bottom: .5rem;
+._404title::after{
+  content: '';
+  position: absolute;
+  display: inline;
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  margin: 150px 0 10px -250px;
+  box-shadow: 0 0 20px 1px #ccc;
+  border-radius: 8px;
+  z-index: -2;
 }
-.back{
-  float: left;
-  padding: 0 0 0 30px;
-}
-.link-back{
+
+._404desc{
+  display: block;
+  font-size: 25px;
+  margin-top: 30px;
   color: #676767;
-  text-decoration: none;
-}.link-back:hover{
+  margin-left: -200px;
+}
+
+._404link{
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 50px;
+  margin-left: 200px;
+  color: #3f9c82;
+}
+
+._404link:hover{
   color: #55efc4;
 }
 
-.right-choice-surah{
-  float: right;
-  padding: 0 30px 0 0;
-}
-
-.t-center{
-  text-align: center;
-}
-
-.brand{
-  color: #fff;
-  font-weight: 700;
-  font-size: 30px;
-}
-
-.search-body{
-  background-color: #55efc4;
-  padding: 3rem 0 3rem 0;
-  display: flex;
-  flex-direction: column;
-}
-
-.bs-form-input{
-  display: block;
-  width: 50%;
-  left: 0;
-  right: 0;
-  padding: .8rem;
-  border:none;
-  margin: auto;
-  font-size: 20px;
-}
-
-.bs-btn{
-  border:none;
-  border-radius: 0;
-  padding: .8rem 1.4rem;
-  font-size: 20px;
-  color: #fff;
-  background-color: #00b894;
-  cursor: pointer;
-}
-
-.box{
-  display: flex;
-  flex-wrap: wrap;
-  padding: 10px;
-  margin-top: 20px;
-}
-.box.box-center{
-  justify-content: center;
-}
-
-.box > .items{
-  text-align: center;
-  padding: .5rem;
-  width: 200px;
-}
-
-.book{
-  border:1px solid #ccc;
-  border-radius: 10px;
-  /* box-shadow: 0 1px 5px 0 #ccc; */
-  padding: 2px;
-}
-.number-home{
-  position: absolute;
-  border: none;
-  border-radius: 50px;
-  padding: 10px;
-  margin-top: -14px;
-  margin-left: -35px;
-}
-
-.title-link{
-  text-decoration: none;
-  color: #676767;
-  font-weight: 700;
-  font-size: 30px;
-}
-.text-grey{
+.title-surah{
   color: #676767;
 }
 
 .content{
-  text-align: center;
-  /* background-color: #ccc; */
-}
-.bx-items{
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  margin-bottom: 80px;
-}
-@media(min-width: 920px){
-  .bx-items{
-    display: flex;
-    flex-direction: column;
-    margin: 0 300px;
-    margin-bottom: 80px;
-  }
-}
-@media(max-width: 768px){
-  .bx-items{
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    margin-bottom: 80px;
-  }
-}
-.bx-items > .item{
-  padding: 30px 20px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  border-radius: 8px;
-  right: 0;
-  text-align: right;
+  padding-bottom: 3rem;
 }
 
 .arabic{
-  display: block;  
-  font-size: 34px;
+  font-size: 30px;
   color: #676767;
 }
+
 .arabic-tr{
-  display: block;
   font-size: 14px;
-  margin-top: 20px;
-  /* color: #ccc; */
-}
-.translate{
-  margin-top: 20px;
-  display: block;
-  text-align: left;
   color: #676767;
 }
-.nomor{
-  color: #fff;
+
+.translate{
+  font-size: 18px;
+  color: #676767;
+}
+
+.number-c-1{
   font-weight: 700;
-  font-size: 20px;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  text-align: center;
-  display: block;
-  border-radius: 50px;
-}.nomor::after{
-  content: '';
-  position: absolute;
-  display: inline-block;
-  width: 80px;
-  height: 30px;
   background-color: #00b894;
-  margin: 0 0 0 -52px;
-  z-index: -1;
   border-radius: 50px;
+  padding: 5px 20px;
+  color: #fff;
 }
 
-._404{
-  width: 50%;
-  margin: auto;
-  text-align: center;
-  padding: 2rem;
+.btn-c-green{
+  color: #fff!important;
+  background-color: #55efc4!important;
+  border-radius: 50px!important;
+  padding: 5px 25px!important;
+}
+.btn-c-green:hover{
+  background-color: #00b894!important;
 }
 
-._404desk{
-  display: block;
-  margin-top: 50px;
-  margin-bottom: 20px;
-  font-size: 20px;
+.btn-c-nav{
+  border-radius: 50px!important;
+  padding: 5px 20px!important;
 }
 
-._404home{
-  text-decoration: none;
-  color: #00b894;
+.text-c-green{
+  color: #00b894!important;
 }
-._404home:hover{
-  color: #55efc4;
+
+.audio-player{
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 2;
+  background-color: #fff;
+  padding: 5px 20px;
+  border-radius: 5px;
 }
 
 .goUp{
   position: fixed;
-  right: 0;
+  display: inline-block;
   bottom: 0;
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 30px;
-  margin-right: 40px;
-  margin-bottom: 40px;
-  line-height: 0;
+  right: 10px;
+  padding: 20px;
   color: #fff;
-}.goUp::after{
+  font-weight: 700;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.goUp::after{
   content: '';
   position: absolute;
+  display: inline-block;
   width: 50px;
   height: 50px;
   background-color: #00b894;
-  right: 0;
-  bottom: 0;
-  margin-right: -15px;
-  margin-bottom: -22px;
-  z-index: -1;
   border-radius: 50px;
-}
-
-.bottom-player{
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  min-width: 15%;
-  background-color: #fff;
-  padding: 20px 20px;
-  text-align: left;
-}
-
-.right-navbar{
-  float: right;
-}
-
-.darkmode-btn{
-  padding-right: 20px;
-  padding-top: 5px;
-  font-size: 20px;
-  font-weight: 700;
+  margin-left: -30px;
+  margin-top: -15px;
   cursor: pointer;
+  z-index: -1;
+}
+
+.dark .bg-c-green{
+  background-color: #1c2022;
+}
+
+.dark .jumbotron{
+  background-color: #24282a;
+  color: #fff;
+}
+
+.dark::after{
+  content: '';
+  position: absolute;
+  background-color: #1c2022;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -3;
+}
+
+.dark .card{
+  background-color: #24282a;
+}
+.dark .card-title{
+  color: #dadada;
+}
+.dark .card-text{
+  color: #dadada;
+}
+.dark .card-link{
+  color: #55efc4;
+}
+
+.dark .footer{
+  background-color: #24282a;
+}
+
+.dark .title-surah, 
+.dark .arabic,
+.dark .arabic-tr,
+.dark .translate{
+  color: #dadada;
+}
+
+.dark ._404title{
+  color: #dadada;
+}
+.dark ._404title::before{
+  /* content: '';
+  position: absolute;
+  display: inline;
+  width: 300px;
+  height: 300px;
+  background-color: #fff;
+  margin: -5px 0 10px -20px;
+  box-shadow: 0 0 30px 8px #ccc;
+  border-radius: 10px;
+  z-index: -1; */
+  box-shadow: 0 0 0 0 #24282a;
+  background-color: #24282a;
+}
+.dark ._404title::after{
+  /* content: '';
+  position: absolute;
+  display: inline;
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  margin: 150px 0 10px -250px;
+  box-shadow: 0 0 20px 1px #ccc;
+  border-radius: 8px;
+  z-index: -2; */
+  background-color: #24282a;
+  box-shadow: 0 0 0 0 #24282a;
+}
+
+.dark .audio-player{
+  background-color: #24282a;
 }
