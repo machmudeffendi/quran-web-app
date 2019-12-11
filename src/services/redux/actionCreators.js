@@ -1,15 +1,12 @@
 import * as types from './types';
-
-const host = 'https://al-quran-8d642.firebaseio.com';
-const listSurah = '/data.json?print=pretty';
-// const listAyyah = '/surat/1.json?print=pretty';
+import { HOST } from './config';
 
 export const fetchNewSurah = (callback) => ({
     type: types.FETCH_NEW_SURAH,
     payload: [],
     meta: {
         type: 'api',
-        url: host + listSurah,
+        url: HOST + "/surah",
         callback: callback,
     }
 })
@@ -19,7 +16,17 @@ export const fetchNewAyyah = (noSurah = 1, callback) => ({
     payload: [],
     meta: {
         type: 'api',
-        url: host + `/surat/${noSurah}.json?print=pretty`,
+        url: HOST + `/quran-indopak/${noSurah}`,
+        callback: callback
+    }
+})
+
+export const getTitleSurah = (idSurah, callback) => ({
+    type: types.GET_TITLE_SURAH,
+    payload: [],
+    meta: {
+        type: 'api',
+        url : HOST + `/surah/${idSurah}`,
         callback: callback
     }
 })

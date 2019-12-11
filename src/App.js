@@ -1,5 +1,4 @@
 import React from 'react';
-import DocumentMeta from 'react-document-meta';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -35,20 +34,10 @@ class App extends React.Component {
   }
 
   render(){
-    const meta = {
-      title: 'Home - Quran Web',
-      description: 'I am a description, and I can create multiple tags',
-      meta: {
-        charset: 'utf-8',
-        name: {
-          keywords: 'react,meta,document,html,tags'
-        }
-      }
-    };
+    
 
     return (
       <div className={this.state.busrainCss.join(" ")}>
-        <DocumentMeta {...meta}/>
         <Router>
           <Navbar title="Quran Web" onClick={this.toggleDarkMode} darkmode={this.state.darkMode}/>
           <Switch>

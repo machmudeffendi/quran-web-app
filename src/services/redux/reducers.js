@@ -1,15 +1,12 @@
 import { combineReducers } from 'redux';
-import * as currentSurah from './currentSurah';
-import * as currentAyyah from './currentAyyah';
+import * as dataSurah from './surah/surahReducer';
 
 export const initialState = {
-    currentSurah: currentSurah.initialState,
-    currentAyyah: currentAyyah.initialState
+    response: dataSurah.initialState
 }
 
 export const rootReducer = combineReducers({
-    currentSurah: currentSurah.reducer,
-    currentAyyah: currentAyyah.reducer
+    response: dataSurah.reducer
 })
 
 export default rootReducer;
