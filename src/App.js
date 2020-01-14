@@ -39,12 +39,15 @@ class App extends React.Component {
     return (
       <div className={this.state.busrainCss.join(" ")}>
         <Router>
-          <Navbar title="Quran Web" onClick={this.toggleDarkMode} darkmode={this.state.darkMode}/>
+          <Navbar title="Al-Qur'an Indonesia" onClick={this.toggleDarkMode} darkmode={this.state.darkMode}/>
+          <div className="content-box">
           <Switch>
             <Route path="/" exact component={Home}/>
-            <Route path="/surah/:id" exact component={Surah}/>
+            <Route path="/quran-web-app/" exact component={Home}/>
+            <Route path="/quran-web-app/surah/:id" exact component={Surah}/>
             <Route component={NoMatch}/>
           </Switch>
+          </div>
           <TopButton/>
         </Router>
         <Footer/>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
  
 
 const NoMatch = () => {
@@ -7,8 +7,8 @@ const NoMatch = () => {
         <div className="container text-center">
             <div className="mt-5">
                 <h2 className="_404title">Oops 404!</h2> 
-                <span className="_404desc">page not found..</span>
-                <Link to="/" className="_404link">Back home</Link>
+                {/*<span className="_404desc">page not found..</span>
+                <Link to="/" className="_404link">Back home</Link>*/}
             </div>
         </div>
     )

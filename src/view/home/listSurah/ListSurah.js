@@ -9,8 +9,8 @@ const ListSurah = ({item}) =>{
                     <h5 className="card-title">{item.nama}</h5>
                     <h6 className="card-subtitle mb-2 text-muted">{item.arabic}</h6>
                     <p className="card-text desc-h-scroll"><span dangerouslySetInnerHTML={{__html: item.terjemah}} /></p>
-                    <Link to={'/surah/' + item.id} className="card-link">Baca</Link>
-                    <Link to={'/surah/description/' + item.id} className="card-link">Lihat Deskripsi</Link>
+                    <Link to={'/quran-web-app/surah/' + item.id} className="card-link">Baca</Link>
+                    <Link to={'/quran-web-app/surah/description/' + item.id} className="card-link">Lihat Deskripsi</Link>
                 </div>
             </div>
         </div>

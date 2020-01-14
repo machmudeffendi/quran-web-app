@@ -30,3 +30,23 @@ export const getValueSurah = (noSurah, callback) => ({
         callback: callback
     }
 })
+
+export const getIdnTranslate = (idSurah, callback) => ({
+    type: types.GET_TERJEMAHAN,
+    payload: [],
+    meta: {
+        type: 'api',
+        url: HOST + `/terjemah/${idSurah}`,
+        callback: callback
+    }
+})
+
+export const getLatin = (idSurah, callback) => ({
+    type: types.GET_LATIN,
+    payload: [],
+    meta: {
+        type: 'api',
+        url: HOST+`/latin/${idSurah}`,
+        callback: callback
+    }
+})

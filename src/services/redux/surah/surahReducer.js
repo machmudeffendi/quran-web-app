@@ -3,6 +3,8 @@ import * as types from "./actionTypes";
 export const initialState = {
     dataAllSurah: {},
     dataValueSurah: {},
+    dataIdnTranslate: {},
+    dataLatin: {},
 }
 
 export const reducer = (state = initialState, action) => {
@@ -13,6 +15,10 @@ export const reducer = (state = initialState, action) => {
             return {...state, dataTitleSurah: action.payload}
         case types.GET_VALUE_SURAH:
             return {...state, dataValueSurah: action.payload}
+        case types.GET_TERJEMAHAN:
+            return {...state, dataIdnTranslate: action.payload}
+        case types.GET_LATIN:
+            return {...state, dataLatin: action.payload}
         default: 
             return state;
     }

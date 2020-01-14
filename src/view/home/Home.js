@@ -34,14 +34,17 @@ class Home extends React.Component {
             <React.Fragment>
             <div className="jumbotron jumbotron-fluid">
                 <div className="container">
-                    <h1 className="display-4">Assalamuallaikum</h1>
-                    <p className="lead">Selamat datang di Quran Web.</p>
+                    <div className="row justify-content-center">
+                        <div className="col-lg-8 col-md-12 search-box">
+                            <input type="text" className="form-control w-100" placeholder="Cari disini.."/>
+                        </div>
+                    </div>
                 </div>
             </div>
             
             <div className="container mb-5 content">
                 <div className="row">
-                    <h2 className="text-center justify-content-center w-100">{isLoading && <div className="spinner-border" role="status"><span className="sr-only">Loading...</span></div>}</h2>
+                    <h2 className="text-center justify-content-center w-100">{isLoading && <div className="spinner-border text-c-green" role="status"><span className="sr-only">Loading...</span></div>}</h2>
                     {
                     currentSurah.map === undefined 
                         ? <span className="alert alert-danger w-100">Opps... Not found any data!</span> 
