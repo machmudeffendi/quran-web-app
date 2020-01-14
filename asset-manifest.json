@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/quran-web-app/static/css/main.3ee024d6.chunk.css",
-    "main.js": "/quran-web-app/static/js/main.73f4b3bd.chunk.js",
-    "main.js.map": "/quran-web-app/static/js/main.73f4b3bd.chunk.js.map",
+    "main.css": "/quran-web-app/static/css/main.36e0cfc4.chunk.css",
+    "main.js": "/quran-web-app/static/js/main.75ce8f68.chunk.js",
+    "main.js.map": "/quran-web-app/static/js/main.75ce8f68.chunk.js.map",
     "runtime-main.js": "/quran-web-app/static/js/runtime-main.b7a8f195.js",
     "runtime-main.js.map": "/quran-web-app/static/js/runtime-main.b7a8f195.js.map",
     "static/css/2.0624914a.chunk.css": "/quran-web-app/static/css/2.0624914a.chunk.css",
-    "static/js/2.0dba51f5.chunk.js": "/quran-web-app/static/js/2.0dba51f5.chunk.js",
-    "static/js/2.0dba51f5.chunk.js.map": "/quran-web-app/static/js/2.0dba51f5.chunk.js.map",
+    "static/js/2.b4fc621e.chunk.js": "/quran-web-app/static/js/2.b4fc621e.chunk.js",
+    "static/js/2.b4fc621e.chunk.js.map": "/quran-web-app/static/js/2.b4fc621e.chunk.js.map",
     "index.html": "/quran-web-app/index.html",
-    "precache-manifest.88af06247cbcd19091fe0da9672f0f80.js": "/quran-web-app/precache-manifest.88af06247cbcd19091fe0da9672f0f80.js",
+    "precache-manifest.2a94ffef38b8bae402ce1d35317435bc.js": "/quran-web-app/precache-manifest.2a94ffef38b8bae402ce1d35317435bc.js",
     "service-worker.js": "/quran-web-app/service-worker.js",
     "static/css/2.0624914a.chunk.css.map": "/quran-web-app/static/css/2.0624914a.chunk.css.map",
-    "static/css/main.3ee024d6.chunk.css.map": "/quran-web-app/static/css/main.3ee024d6.chunk.css.map"
+    "static/css/main.36e0cfc4.chunk.css.map": "/quran-web-app/static/css/main.36e0cfc4.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.b7a8f195.js",
     "static/css/2.0624914a.chunk.css",
-    "static/js/2.0dba51f5.chunk.js",
-    "static/css/main.3ee024d6.chunk.css",
-    "static/js/main.73f4b3bd.chunk.js"
+    "static/js/2.b4fc621e.chunk.js",
+    "static/css/main.36e0cfc4.chunk.css",
+    "static/js/main.75ce8f68.chunk.js"
   ]
 }
